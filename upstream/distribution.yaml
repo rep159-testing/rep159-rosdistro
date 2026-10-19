@@ -5,7 +5,7 @@
 release_platforms:
   ubuntu:
   - resolute
-install_rule: '/opt/vendor/{distro}'
+install_rule: '/opt/ros/{distro}'
 repositories:
   ament_cmake_core:
     release:
