@@ -5,9 +5,6 @@
 release_platforms:
   ubuntu:
   - resolute
-binary_rule:
-  search: '^'
-  replace: 'vendor-{DISTRO}-'
 install_rule: '/opt/vendor/{distro}'
 repositories:
   ament_cmake_core:

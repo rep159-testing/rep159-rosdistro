@@ -1,8 +1,5 @@
 distribution_file:
-- binary_rule:
-    replace: vendor-{DISTRO}-
-    search: ^
-  install_rule: /opt/vendor/{distro}
+- install_rule: /opt/vendor/{distro}
   release_platforms:
     ubuntu:
     - resolute
