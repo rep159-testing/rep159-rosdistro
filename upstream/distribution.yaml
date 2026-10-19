@@ -8,6 +8,7 @@ release_platforms:
 binary_rule:
   search: '^'
   replace: 'vendor-{DISTRO}-'
+install_rule: '/opt/vendor/{distro}'
 repositories:
   ament_cmake_core:
     release:

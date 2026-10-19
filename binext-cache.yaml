@@ -3,6 +3,7 @@ distribution_file:
   - distro_name: upstream
     extension_method: binary_import
     index_url: null
+    install_rule: /opt/vendor/{distro}
   release_platforms:
     ubuntu:
     - resolute
