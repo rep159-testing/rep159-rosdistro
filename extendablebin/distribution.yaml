@@ -1,0 +1,24 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 141: https://reps.openrobotics.org/rep-0141/
+---
+extends:
+- distro_name: extendable
+  extension_method: binary_import
+  index_url:
+release_platforms:
+  ubuntu:
+  - resolute
+repositories:
+  downstream_bin_a:
+    release:
+      tags:
+        release: release/extendablebin/{package}/{version}
+      url: https://github.com/rep159-testing/downstream_bin_a-release.git
+      version: 0.2.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/downstream_bin_a.git
+      version: main
+type: distribution
+version: 3

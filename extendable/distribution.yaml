@@ -1,0 +1,40 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 141: https://reps.openrobotics.org/rep-0141/
+---
+release_platforms:
+  ubuntu:
+  - resolute
+repositories:
+  upstream_a:
+    release:
+      tags:
+        release: release/extendable/{package}/{version}
+      url: https://github.com/rep159-testing/upstream_a-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/upstream_a.git
+      version: main
+  upstream_b:
+    release:
+      tags:
+        release: release/extendable/{package}/{version}
+      url: https://github.com/rep159-testing/upstream_b-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/upstream_b.git
+      version: main
+  upstream_c:
+    release:
+      tags:
+        release: release/extendable/{package}/{version}
+      url: https://github.com/rep159-testing/upstream_c-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/upstream_c.git
+      version: main
+type: distribution
+version: 3
