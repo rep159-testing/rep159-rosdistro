@@ -8,6 +8,7 @@ release_platforms:
 binary_rule:
   search: '^'
   replace: 'vendor-{DISTRO}-'
+install_rule: '/opt/ros/{distro}'
 repositories:
   upstream_a:
     release:
