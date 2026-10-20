@@ -13,7 +13,7 @@ repositories:
   downstream_src_a:
     release:
       tags:
-        release: release/extendablesrc/{package}/{version}
+        release: release/srcext/{package}/{version}
       url: https://github.com/rep159-testing/downstream_src_a-release.git
       version: 0.1.0-1
     source:
