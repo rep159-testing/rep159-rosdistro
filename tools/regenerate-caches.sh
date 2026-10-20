@@ -8,10 +8,13 @@
 # the cache is loaded.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+DISTROS=(upstream srcext binext extendable extendablesrc extendablebin extendablechain)
+
 python3 -m rosdistro.cli.rosdistro_build_cache --preclean --include-source \
-    index-v4.yaml upstream srcext binext
+    index-v4.yaml "${DISTROS[@]}"
 # rosdistro_build_cache stamps the current time in the gzip header; recompress
 # without it so an unchanged cache gives an unchanged .gz.
-for name in upstream srcext binext; do
+for name in "${DISTROS[@]}"; do
     gzip -n -9 -c "$name-cache.yaml" > "$name-cache.yaml.gz"
 done
+
