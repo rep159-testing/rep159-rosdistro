@@ -4,7 +4,7 @@
 ---
 extends:
 - distro_name: extendablebin
-  extension_method: binary_import
+  extension_method: source_rebuild
   install_rule: '/opt/ros/{distro}'
   index_url:
 release_platforms:
