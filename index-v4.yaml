@@ -37,16 +37,19 @@ distributions:
     python_version: 3
   extendable:
     distribution: [extendable/distribution.yaml]
+    distribution_cache: extendable-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
     python_version: 3
   extendablesrc:
     distribution: [extendablesrc/distribution.yaml]
+    distribution_cache: extendablesrc-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
     python_version: 3
   extendablebin:
     distribution: [extendablebin/distribution.yaml]
+    distribution_cache: extendablebin-cache.yaml.gz
     distribution_status: active
     distribution_type: ros2
     python_version: 3

@@ -9,7 +9,7 @@ repositories:
   upstream_a:
     release:
       tags:
-        release: release/extendable/{package}/{version}
+        release: release/upstream/{package}/{version}
       url: https://github.com/rep159-testing/upstream_a-release.git
       version: 0.1.0-1
     source:
@@ -19,7 +19,7 @@ repositories:
   upstream_b:
     release:
       tags:
-        release: release/extendable/{package}/{version}
+        release: release/upstream/{package}/{version}
       url: https://github.com/rep159-testing/upstream_b-release.git
       version: 0.1.0-1
     source:
@@ -29,7 +29,7 @@ repositories:
   upstream_c:
     release:
       tags:
-        release: release/extendable/{package}/{version}
+        release: release/upstream/{package}/{version}
       url: https://github.com/rep159-testing/upstream_c-release.git
       version: 0.1.0-1
     source:
