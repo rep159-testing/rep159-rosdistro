@@ -1,5 +1,8 @@
 distribution_file:
-- release_platforms:
+- binary_rule:
+    replace: vendor-{DISTRO}-
+    search: ^
+  release_platforms:
     ubuntu:
     - resolute
   repositories:

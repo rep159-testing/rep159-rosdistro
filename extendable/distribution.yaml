@@ -5,6 +5,9 @@
 release_platforms:
   ubuntu:
   - resolute
+binary_rule:
+  search: '^'
+  replace: 'vendor-{DISTRO}-'
 repositories:
   upstream_a:
     release:
