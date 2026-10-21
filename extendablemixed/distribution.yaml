@@ -16,10 +16,5 @@ repositories:
       type: git
       url: https://github.com/rep159-testing/downstream_chain_a.git
       version: main
-  upstream_c:
-    source:
-      type: git
-      url: https://github.com/rep159-testing/upstream_c.git
-      version: main
 type: distribution
 version: 3
