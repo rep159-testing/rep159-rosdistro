@@ -10,6 +10,10 @@ extends:
 release_platforms:
   ubuntu:
   - resolute
+binary_rule:
+  search: '^'
+  replace: 'vendor-{DISTRO}-'
+install_rule: '/opt/ros/{distro}'
 repositories:
   downstream_bin_a:
     release:

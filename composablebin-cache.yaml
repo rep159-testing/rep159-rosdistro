@@ -1,9 +1,13 @@
 distribution_file:
-- extends:
+- binary_rule:
+    replace: vendor-{DISTRO}-
+    search: ^
+  extends:
   - distro_name: composable
     extension_method: binary_import
     index_url: null
     install_rule: /opt/ros/{distro}
+  install_rule: /opt/ros/{distro}
   release_platforms:
     ubuntu:
     - resolute
