@@ -11,16 +11,6 @@ release_platforms:
   ubuntu:
   - resolute
 repositories:
-  ros_workspace:
-    release:
-      tags:
-        release: release/upstream/{package}/{version}
-      url: https://github.com/rep159-testing/ros_workspace-release.git
-      version: 1.0.3-2
-    source:
-      type: git
-      url: https://github.com/rep159-testing/ros_workspace.git
-      version: main
   downstream_bin_a:
     release:
       tags:
