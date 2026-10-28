@@ -1,0 +1,23 @@
+distribution_file:
+- extends:
+  - distro_name: composablebin
+    extension_method: binary_import
+    index_url: null
+    install_rule: /opt/ros/{distro}
+  release_platforms:
+    ubuntu:
+    - resolute
+  repositories:
+    downstream_chain_a: {source: {type: git, url: 'https://github.com/rep159-testing/downstream_chain_a.git', version: main}}
+  type: distribution
+  version: 3
+name: composablemixed
+release_package_xmls: {}
+source_repo_package_xmls:
+  downstream_chain_a:
+    _ref: b03fc7e3c3f773c732dd2423fe911f3b37cbb8ac
+    downstream_chain_a:
+    - ''
+    - '<?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="3"><name>downstream_chain_a</name><version>0.1.0</version><description>Package of the extendablechain distribution for REP-159 test harness: consumes downstream_bin_a through chained binary_import extensions.</description><maintainer email="federico.rossi@creativa77.com.ar">Federico Rossi</maintainer><license>Apache-2.0</license><buildtool_depend>cmake</buildtool_depend><buildtool_depend>pkg-config</buildtool_depend><depend>downstream_bin_a</depend><build_depend>gtest</build_depend><test_depend>gtest</test_depend><export><build_type>cmake</build_type></export></package>'
+type: cache
+version: 2

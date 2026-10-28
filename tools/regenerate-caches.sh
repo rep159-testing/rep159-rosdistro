@@ -8,7 +8,7 @@
 # the cache is loaded.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-DISTROS=(upstream srcext binext extendable extendablesrc extendablebin extendablechain extendablemixed extendablediamond)
+DISTROS=(upstream srcext binext extendable extendablesrc extendablebin extendablechain extendablemixed extendablediamond composable composablesrc composablebin composablechain composablemixed composablediamond)
 
 python3 -m rosdistro.cli.rosdistro_build_cache --preclean --include-source \
     index-v4.yaml "${DISTROS[@]}"

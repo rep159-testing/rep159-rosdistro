@@ -71,4 +71,41 @@ distributions:
     distribution_status: active
     distribution_type: ros2
     python_version: 3
+  composable:
+    distribution: [composable/distribution.yaml]
+    distribution_cache: composable-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+  composablebin:
+    distribution: [composablebin/distribution.yaml]
+    distribution_cache: composablebin-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+  composablesrc:
+    distribution: [composablesrc/distribution.yaml]
+    distribution_cache: composablesrc-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+  composablechain:
+    distribution: [composablechain/distribution.yaml]
+    distribution_cache: composablechain-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+  composablemixed:
+    distribution: [composablemixed/distribution.yaml]
+    distribution_cache: composablemixed-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+  composablediamond:
+    distribution: [composablediamond/distribution.yaml]
+    distribution_cache: composablediamond-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3
+
 
