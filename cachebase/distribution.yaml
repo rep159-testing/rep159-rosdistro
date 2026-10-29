@@ -1,0 +1,24 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 141: https://reps.openrobotics.org/rep-0141/
+---
+release_platforms:
+  ubuntu:
+  - resolute
+binary_rule:
+  search: '^'
+  replace: 'vendor-{DISTRO}-'
+install_rule: '/opt/ros/{distro}'
+repositories:
+  upstream_a:
+    release:
+      tags:
+        release: release/upstream/{package}/{version}
+      url: https://github.com/rep159-testing/upstream_a-release.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/upstream_a.git
+      version: main
+type: distribution
+version: 3
