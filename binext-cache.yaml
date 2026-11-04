@@ -7,7 +7,7 @@ distribution_file:
     ubuntu:
     - resolute
   repositories:
-    downstream_bin_a: {release: {tags: {release: 'release/binext/{package}/{version}'}, url: 'https://github.com/rep159-testing/downstream_bin_a-release.git', version: 0.2.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/downstream_bin_a.git', version: main}}
+    downstream_bin_a: {release: {tags: {release: 'release/binext/{package}/{version}'}, url: 'https://github.com/rep159-testing/downstream_bin_a-release.git', version: 0.2.0-2}, source: {type: git, url: 'https://github.com/rep159-testing/downstream_bin_a.git', version: main}}
     ros_workspace: {release: {tags: {release: 'release/binext/{package}/{version}'}, url: 'https://github.com/rep159-testing/ros_workspace-release.git', version: 1.0.4-1}}
   type: distribution
   version: 3
