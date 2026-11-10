@@ -10,16 +10,26 @@ extends:
 release_platforms:
   ubuntu:
   - resolute
+binary_rule:
+  search: '^'
+  replace: 'vendor-{distro}-'
+install_rule: '/opt/ros/{distro}'
 repositories:
   downstream_bin_a:
     release:
       tags:
-        release: release/extendablebin/{package}/{version}
+        release: debian/vendor-extendablebin-downstream-bin-a_{version}_resolute
       url: https://github.com/rep159-testing/downstream_bin_a-release.git
       version: 0.2.0-1
     source:
       type: git
       url: https://github.com/rep159-testing/downstream_bin_a.git
       version: main
+  ros_workspace:
+    release:
+      tags:
+        release: debian/vendor-extendablebin-ros-workspace_{version}_resolute
+      url: https://github.com/rep159-testing/ros_workspace-release.git
+      version: 1.0.4-1
 type: distribution
 version: 3
