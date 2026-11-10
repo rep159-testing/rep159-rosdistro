@@ -1,6 +1,6 @@
 distribution_file:
 - binary_rule:
-    replace: vendor-{DISTRO}-
+    replace: vendor-{distro}-
     search: ^
   release_platforms:
     ubuntu:
