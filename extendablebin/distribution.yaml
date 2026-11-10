@@ -18,7 +18,7 @@ repositories:
   downstream_bin_a:
     release:
       tags:
-        release: debian/vendor-extendablebin-downstream-bin-a_{version}_resolute
+        release: release/extendablebin/{package}/{version}
       url: https://github.com/rep159-testing/downstream_bin_a-release.git
       version: 0.2.0-1
     source:
@@ -28,7 +28,7 @@ repositories:
   ros_workspace:
     release:
       tags:
-        release: debian/vendor-extendablebin-ros-workspace_{version}_resolute
+        release: release/binext/{package}/{version}
       url: https://github.com/rep159-testing/ros_workspace-release.git
       version: 1.0.4-1
 type: distribution

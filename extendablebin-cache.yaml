@@ -12,8 +12,8 @@ distribution_file:
     ubuntu:
     - resolute
   repositories:
-    downstream_bin_a: {release: {tags: {release: 'debian/vendor-extendablebin-downstream-bin-a_{version}_resolute'}, url: 'https://github.com/rep159-testing/downstream_bin_a-release.git', version: 0.2.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/downstream_bin_a.git', version: main}}
-    ros_workspace: {release: {tags: {release: 'debian/vendor-extendablebin-ros-workspace_{version}_resolute'}, url: 'https://github.com/rep159-testing/ros_workspace-release.git', version: 1.0.4-1}}
+    downstream_bin_a: {release: {tags: {release: 'release/extendablebin/{package}/{version}'}, url: 'https://github.com/rep159-testing/downstream_bin_a-release.git', version: 0.2.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/downstream_bin_a.git', version: main}}
+    ros_workspace: {release: {tags: {release: 'release/binext/{package}/{version}'}, url: 'https://github.com/rep159-testing/ros_workspace-release.git', version: 1.0.4-1}}
   type: distribution
   version: 3
 name: extendablebin
