@@ -5,7 +5,7 @@
 extends:
 - distro_name: extendable
   extension_method: binary_import
-  install_rule: '/opt/ros/{distro}'
+  install_rule: '/opt/vendor/{distro}'
   index_url:
 release_platforms:
   ubuntu:
