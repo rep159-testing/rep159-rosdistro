@@ -7,7 +7,7 @@ release_platforms:
   - resolute
 binary_rule:
   search: '^'
-  replace: 'vendor-{DISTRO}-'
+  replace: 'vendor-{distro}-'
 install_rule: '/opt/vendor/{distro}'
 repositories:
   upstream_a:
