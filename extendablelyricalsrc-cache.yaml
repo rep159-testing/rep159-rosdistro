@@ -1,0 +1,26 @@
+distribution_file:
+- extends:
+  - distro_name: extendablejetty
+    extension_method: source_rebuild
+    index_url: null
+    install_rule: /opt/ros/{distro}
+  install_rule: /opt/ros/{distro}
+  release_platforms:
+    ubuntu:
+    - resolute
+  repositories:
+    gz-demo-math: {release: {tags: {release: 'release/extendablelyrical/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 1.0.1-1}, source: {type: git, url: 'https://github.com/j-rivero/gz-demo-math.git', version: main}}
+  type: distribution
+  version: 3
+  workspace_package: ros_workspace_shell
+name: extendablelyricalsrc
+release_package_xmls:
+  gz-demo-math: &id001 <?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="3"><name>gz-demo-math</name><version>1.0.1</version><description>Trivial consumer of Gazebo Math. Exists to prove that a distribution with no ROS lineage can resolve Gazebo dependencies through a REP-2015 extension of Gazebo Jetty.</description><maintainer email="jrivero@honurobotics.com">Jose Luis Rivero</maintainer><license>Apache-2.0</license><buildtool_depend>cmake</buildtool_depend><depend>gz-math</depend><build_depend>gtest</build_depend><test_depend>gtest</test_depend><export><build_type>cmake</build_type></export></package>
+source_repo_package_xmls:
+  gz-demo-math:
+    _ref: e082b1f9a4a06d8269eac59593d9ae42a90305ba
+    gz-demo-math:
+    - ''
+    - *id001
+type: cache
+version: 2

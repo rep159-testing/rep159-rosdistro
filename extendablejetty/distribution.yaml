@@ -1,0 +1,52 @@
+%YAML 1.1
+# Gazebo Jetty root distribution for REP-159 Stage 6 testing (extendablejetty).
+# Uses workspace_package: ros_workspace_shell (plain CMake, zero Ament packages).
+---
+release_platforms:
+  ubuntu:
+  - resolute
+install_rule: '/opt/ros/{distro}'
+repositories:
+  gz-cmake:
+    release:
+      tags:
+        release: release/extendablejetty/{package}/{version}
+      url: https://github.com/KmoM88/rep159-testing.git
+      version: 5.1.1-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-cmake.git
+      version: gz-cmake5
+  gz-math:
+    release:
+      tags:
+        release: release/extendablejetty/{package}/{version}
+      url: https://github.com/KmoM88/rep159-testing.git
+      version: 9.3.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-math.git
+      version: gz-math9
+  gz-utils:
+    release:
+      tags:
+        release: release/extendablejetty/{package}/{version}
+      url: https://github.com/KmoM88/rep159-testing.git
+      version: 4.0.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-utils.git
+      version: gz-utils4
+  ros_workspace_shell:
+    release:
+      tags:
+        release: release/extendablejetty/{package}/{version}
+      url: https://github.com/KmoM88/rep159-testing.git
+      version: 0.1.0-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/ros_workspace_shell.git
+      version: main
+type: distribution
+version: 3
+workspace_package: ros_workspace_shell

@@ -1,0 +1,42 @@
+distribution_file:
+- install_rule: /opt/ros/{distro}
+  release_platforms:
+    ubuntu:
+    - resolute
+  repositories:
+    gz-cmake: {release: {tags: {release: 'release/extendablejetty/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 5.1.1-1}, source: {type: git, url: 'https://github.com/gazebosim/gz-cmake.git', version: gz-cmake5}}
+    gz-math: {release: {tags: {release: 'release/extendablejetty/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 9.3.0-1}, source: {type: git, url: 'https://github.com/gazebosim/gz-math.git', version: gz-math9}}
+    gz-utils: {release: {tags: {release: 'release/extendablejetty/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 4.0.0-1}, source: {type: git, url: 'https://github.com/gazebosim/gz-utils.git', version: gz-utils4}}
+    ros_workspace_shell: {release: {tags: {release: 'release/extendablejetty/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 0.1.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/ros_workspace_shell.git', version: main}}
+  type: distribution
+  version: 3
+  workspace_package: ros_workspace_shell
+name: extendablejetty
+release_package_xmls:
+  gz-cmake: '<?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="2"><name>gz-cmake</name><version>5.1.1</version><description>Gazebo CMake : CMake Modules for Gazebo Projects</description><maintainer email="scpeters@openrobotics.org">Steve Peters</maintainer><license>Apache License 2.0</license><url type="website">https://github.com/gazebosim/gz-cmake</url><buildtool_depend>cmake</buildtool_depend><buildtool_depend>pkg-config</buildtool_depend><test_depend>cmake</test_depend><export><build_type>cmake</build_type></export></package>'
+  gz-math: '<?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="2"><name>gz-math</name><version>9.3.0</version><description>Gazebo Math : Math classes and functions for robot applications</description><maintainer email="scpeters@openrobotics.org">Steve Peters</maintainer><maintainer email="aditya050995@gmail.com">Aditya Pande</maintainer><license>Apache License 2.0</license><url type="website">https://github.com/gazebosim/gz-math</url><buildtool_depend>cmake</buildtool_depend><build_depend>gz-cmake</build_depend><build_export_depend>gz-cmake</build_export_depend><build_depend>pybind11-dev</build_depend><depend>eigen</depend><depend>gz-utils</depend><test_depend>python3-pytest</test_depend><export><build_type>cmake</build_type></export></package>'
+  gz-utils: '<?xml version="1.0" ?><package format="2"><name>gz-utils</name><version>4.0.0</version><description>Gazebo Utils : Classes and functions for robot applications</description><maintainer email="addisu@openrobotics.org">Addizu Z. Taddese</maintainer><license>Apache License 2.0</license><url type="website">https://github.com/gazebosim/gz-utils</url><buildtool_depend>cmake</buildtool_depend><build_depend>gz-cmake</build_depend><build_export_depend>gz-cmake</build_export_depend><depend>cli11</depend><depend>spdlog</depend><export><build_type>cmake</build_type></export></package>'
+  ros_workspace_shell: &id001 <?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="3"><name>ros_workspace_shell</name><version>0.1.0</version><description>Provides the prefix level environment files for ROS 2 packages, built with plain CMake and without any ament package.</description><maintainer email="jrivero@honurobotics.com">Jose Luis Rivero</maintainer><license file="LICENSE">Apache License 2.0</license><author email="steven@openrobotics.org">Steven! Ragnarök</author><author email="jrivero@honurobotics.com">Jose Luis Rivero</author><buildtool_depend>cmake</buildtool_depend><buildtool_depend>python3</buildtool_depend><exec_depend>python3</exec_depend><export><build_type>cmake</build_type></export></package>
+source_repo_package_xmls:
+  gz-cmake:
+    _ref: 6cd8853669da67eb2fd229e92fd5ea9bfe8f4461
+    gz-cmake:
+    - ''
+    - '<?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="2"><name>gz-cmake</name><version>5.1.1</version><description>Gazebo CMake : CMake Modules for Gazebo Projects</description><maintainer email="scpeters@openrobotics.org">Steve Peters</maintainer><license>Apache-2.0</license><url type="website">https://github.com/gazebosim/gz-cmake</url><buildtool_depend>cmake</buildtool_depend><buildtool_depend>pkg-config</buildtool_depend><test_depend>cmake</test_depend><export><build_type>cmake</build_type></export></package>'
+  gz-math:
+    _ref: 6fe8077325a11db094aec03a79b36e873bdb786a
+    gz-math:
+    - ''
+    - '<?xml version="1.0" ?><?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?><package format="2"><name>gz-math</name><version>9.3.0</version><description>Gazebo Math : Math classes and functions for robot applications</description><maintainer email="scpeters@openrobotics.org">Steve Peters</maintainer><maintainer email="caguero@honurobotics.com">Carlos Agüero</maintainer><license>Apache-2.0</license><url type="website">https://github.com/gazebosim/gz-math</url><buildtool_depend>cmake</buildtool_depend><build_depend>gz-cmake</build_depend><build_depend>pybind11-dev</build_depend><depend>eigen</depend><depend>gz-utils</depend><test_depend>python3-pytest</test_depend><export><build_type>cmake</build_type></export></package>'
+  gz-utils:
+    _ref: b9f98c5f6843a9149ccf616dca7229798c35d6a9
+    gz-utils:
+    - ''
+    - '<?xml version="1.0" ?><package format="2"><name>gz-utils</name><version>4.0.0</version><description>Gazebo Utils : Classes and functions for robot applications</description><maintainer email="addisu@openrobotics.org">Addizu Z. Taddese</maintainer><license>Apache-2.0</license><url type="website">https://github.com/gazebosim/gz-utils</url><buildtool_depend>cmake</buildtool_depend><build_depend>gz-cmake</build_depend><depend>cli11</depend><depend>spdlog</depend><export><build_type>cmake</build_type></export></package>'
+  ros_workspace_shell:
+    _ref: a89cc7b77b4b290b72b5ea16dddff193b6dbc334
+    ros_workspace_shell:
+    - ''
+    - *id001
+type: cache
+version: 2

@@ -71,4 +71,25 @@ distributions:
     distribution_status: active
     distribution_type: ros2
     python_version: 3
+  extendablejetty:
+    distribution: [extendablejetty/distribution.yaml]
+    distribution_cache: extendablejetty-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    distribution_eol_date: 2030-11-01
+    python_version: 3
+  extendablelyricalsrc:
+    distribution: [extendablelyricalsrc/distribution.yaml]
+    distribution_cache: extendablelyricalsrc-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    distribution_eol_date: 2030-11-01
+    python_version: 3
+  extendablelyrical:
+    distribution: [extendablelyrical/distribution.yaml]
+    distribution_cache: extendablelyrical-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    distribution_eol_date: 2030-11-01
+    python_version: 3
 
