@@ -9,8 +9,8 @@ distribution_file:
     ubuntu:
     - resolute
   repositories:
-    gz-demo-math: {release: {tags: {release: 'release/extendablelyrical/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 1.0.1-1}, source: {type: git, url: 'https://github.com/j-rivero/gz-demo-math.git', version: main}}
-    ros_workspace_shell: {release: {tags: {release: 'release/extendablelyrical/{package}/{version}'}, url: 'https://github.com/KmoM88/rep159-testing.git', version: 0.1.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/ros_workspace_shell.git', version: main}}
+    gz-demo-math: {release: {tags: {release: 'release/extendablelyrical/{package}/{version}'}, url: 'https://github.com/rep159-testing/gz-demo-math-release.git', version: 1.0.1-1}, source: {type: git, url: 'https://github.com/j-rivero/gz-demo-math.git', version: main}}
+    ros_workspace_shell: {release: {tags: {release: 'release/extendablelyrical/{package}/{version}'}, url: 'https://github.com/rep159-testing/ros_workspace_shell-release.git', version: 0.1.0-1}, source: {type: git, url: 'https://github.com/rep159-testing/ros_workspace_shell.git', version: main}}
   type: distribution
   version: 3
   workspace_package: ros_workspace_shell

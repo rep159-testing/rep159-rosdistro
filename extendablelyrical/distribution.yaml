@@ -17,7 +17,7 @@ repositories:
     release:
       tags:
         release: release/extendablelyrical/{package}/{version}
-      url: https://github.com/KmoM88/rep159-testing.git
+      url: https://github.com/rep159-testing/gz-demo-math-release.git
       version: 1.0.1-1
     source:
       type: git
@@ -27,7 +27,7 @@ repositories:
     release:
       tags:
         release: release/extendablelyrical/{package}/{version}
-      url: https://github.com/KmoM88/rep159-testing.git
+      url: https://github.com/rep159-testing/ros_workspace_shell-release.git
       version: 0.1.0-1
     source:
       type: git
