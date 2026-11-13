@@ -1,5 +1,5 @@
 %YAML 1.1
-# Child distribution extending extendablejetty with source_rebuild (REP-159 Stage 6).
+# Child distribution extending extendablejetty with source_rebuild (REP-159 Gazebo source extension).
 ---
 extends:
 - distro_name: extendablejetty

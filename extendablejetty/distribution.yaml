@@ -1,5 +1,5 @@
 %YAML 1.1
-# Gazebo Jetty root distribution for REP-159 Stage 6 testing (extendablejetty).
+# Gazebo Jetty root distribution for REP-159 Gazebo testing (extendablejetty).
 # Uses workspace_package: ros_workspace_shell (plain CMake, zero Ament packages).
 ---
 release_platforms:

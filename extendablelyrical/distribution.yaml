@@ -1,9 +1,13 @@
 %YAML 1.1
-# Child distribution extending extendablejetty with binary_import (REP-159 Stage 6).
-# Uses workspace_package: ros_workspace_shell to chain /opt/ros/extendablejetty
-# into /opt/ros/extendablelyrical with zero Ament dependencies.
+# Child distribution extending [lyrical, extendablejetty] with binary_import (REP-159 multi-parent Gazebo extension).
+# Uses standard ros_workspace to chain /opt/ros/lyrical and /opt/ros/extendablejetty
+# into /opt/ros/extendablelyrical and builds vendorless ros_gz_bridge.
 ---
 extends:
+- distro_name: lyrical
+  extension_method: binary_import
+  install_rule: '/opt/ros/{distro}'
+  index_url:
 - distro_name: extendablejetty
   extension_method: binary_import
   install_rule: '/opt/ros/{distro}'
@@ -23,16 +27,28 @@ repositories:
       type: git
       url: https://github.com/j-rivero/gz-demo-math.git
       version: main
-  ros_workspace_shell:
+  ros_gz:
+    release:
+      packages:
+      - ros_gz_bridge
+      - ros_gz_interfaces
+      tags:
+        release: release/extendablelyrical/{package}/{version}
+      url: https://github.com/rep159-testing/ros_gz-release.git
+      version: 3.0.12-1
+    source:
+      type: git
+      url: https://github.com/rep159-testing/ros_gz.git
+      version: feat/rep159-no-vendor
+  ros_workspace:
     release:
       tags:
         release: release/extendablelyrical/{package}/{version}
-      url: https://github.com/rep159-testing/ros_workspace_shell-release.git
-      version: 0.1.0-1
+      url: https://github.com/rep159-testing/ros_workspace-release.git
+      version: 1.0.4-1
     source:
       type: git
-      url: https://github.com/rep159-testing/ros_workspace_shell.git
-      version: main
+      url: https://github.com/rep159-testing/ros_workspace.git
+      version: feat/rep159-parent-chaining
 type: distribution
 version: 3
-workspace_package: ros_workspace_shell
